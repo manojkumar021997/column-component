@@ -75,7 +75,7 @@ p {
 }
 button {
   justify-content: center;
-  width: 8vw;
+  width: 8rem;
   padding: 1rem 1rem;
   border-radius: 24px;
   border: none;
@@ -91,4 +91,39 @@ button {
 }
 .luxury-btn {
   color: hsl(179, 100%, 13%);
+}
+
+/*media quary mobile responsive  */
+
+@media only screen and (max-width: 500px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 3rem 0;
+  }
+  .Sedans-card {
+    border-radius: 12px 12px 0 0;
+  }
+  .luxury-card {
+    border-radius: 0 0 12px 12px;
+  }
+  .Sedans-card,
+  .Suvs-card,
+  .luxury-card {
+    gap: 1rem;
+    height: auto;
+    width: 18rem;
+    padding: 2.1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .Sedans-card,
+  .Suvs-card,
+  .luxury-card {
+    gap: 1rem;
+    height: auto;
+    width: 18rem;
+    padding: 2rem;
+  }
 }
